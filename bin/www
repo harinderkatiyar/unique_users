@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require("../app");
+
+
+app.listen(4000,() => {
+  console.log(`Server is runnung on runnig on 4000`);
+});  
+

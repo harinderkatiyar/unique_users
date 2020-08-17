@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon node ./bin/www",
+    "seeduser":"mongoimport --db userdb --collection users --file ./seed/user.json --jsonArray",
+    "seedpro":"mongoimport --db userdb --collection products --file ./seed/product.json --jsonArray"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.10.0",
+    "nodemon": "^2.0.4"
+  }
+}
